@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+}
+header {
+    background-color: #562EFF;
+    height: 94px;
+    width: 100%;
+    margin-bottom: 45PX;
+    
+}
+.idea {
+    display: flex;
+    align-items: center;
+}
+.home-nav {
+    display: flex;
+    align-items: center;
+    padding-left: 450px;
+}
+.nav {
+    display: flex;
+    gap: 36px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.nav > div a {
+    font-size: 24px;
+}
+header a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+nav ul {
+    display: flex;
+    gap: 36px;
+    margin-right: 35px;
+}
+.nav ul li , .nav ul li a{
+    list-style: none;
+    font-size: 16px;
+}
+header img {
+    height: 51px;
+    margin-right: 15px;
+    padding: 30% 0 0 0;
+}
+
+
+main {
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+}
+.container {
+    align-items: center;
+    width: 877px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    padding: 30px 24px 50px 30px;
+    margin-bottom: 20px;
+}
+.Section-title {
+    margin-top: 3px;
+    margin-bottom: 30px;
+    color: #562EFF;
+    font-size: 24px;
+
+}
+
+.players{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.player {
+    display: flex;
+    align-items: center;
+}
+
+.player img {
+    height: 56px;
+
+}
+.player-name {
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+hr {
+    border: 1px solid #D1D1D1;
+    margin: 30px 0;
+}
+
+/* blogs */
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 26px;
+    column-gap: 60px;
+}
+.blog {
+    display: flex;
+}
+.blog .tumbnail img {
+    height: 117px;
+}
+
+
+.blog .blog-info .blog-title {
+    font-weight: 500;
+    font-size: 20px;
+    
+    margin-top: 3px;
+
+}
+.blog .blog-info {
+    margin-left: 16px;
+}
+.blog-info p{
+    color: #9F9F9F;
+    font-size: 16px;
+}
+
+.blog-info p a {
+    text-decoration: none;
+    color: #562EFF;
+}
+
+/* courses styles */
+.courses{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+}
+.course {
+    background-color: #FFFFFF;
+
+    filter: drop-shadow(0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05));
+    border-radius: 10px;
+    padding: 15px 16px 21px 12px;
+}
+.course-title{
+    font-size: 20.0336px;
+    color: #1E1E1E;
+}
+.course-author {
+    color: #ED6B4F;
+    font-size: 14.6913px;
+}
+.course .course-banner img {
+    height: 105.51px;
+}
+
+.course-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.course-info span {
+    margin-left: 10px;
+}
+.fa-star{
+    color: #FFC014;
+    font-size: 12.50px;
+}
+.fa-star.empty {
+    color: #AEAEAE;
+    opacity: 0.25;
+}
+
+.course-info p {
+    color: #A2A2A2;
+}
+
+.course-duration {
+    background-color: #FFE4E8;
+    border-radius: 14.6913px;
+    color: #FF4A60;
+    padding: 6px;
+}
+
+@media only screen and (max-width: 688px) {
+    header {
+        height: 100%;
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+    .nav {
+        justify-content: space-between;
+        padding-left: 12px;
+
+    }
+    .idea {
+        flex-direction: column;
+        
+    }
+    .home-nav {
+        align-items: flex-start;
+        padding-left: 0;
+    }
+    nav ul {
+        gap: 0;
+        flex-direction: column;
+        padding-left: 0;
+    }
+    
+    .container {
+        width: 100%;
+        padding-bottom: 18px;
+    }
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 12px;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    .blog {
+        flex-direction: column;
+        padding-left: 12px;
+    }
+
+    .blog .blog-info {
+        margin-left: 0;
+    }
+    
+    .courses {
+        grid-template-columns: 1fr;
+    }
+
+
+}
+
+
+
+
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .top-players, .blogs, .courses  {
+        padding-left: 20px;
+    }
+    .container,  header {
+        width: 100%;
+        height: 100%;
+    }
+    .nav {
+        justify-content: space-between;
+        
+    }
+    .home-nav {
+        padding-left: 0;
+    }
+    nav ul {
+        padding-left: 0;
+    }
+
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
